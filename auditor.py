@@ -34,7 +34,7 @@ while True:
         print("Number of Failed/Rejected Entries:", rejected_entries)
         break
 
-    print(f"Inventory updated. Current stock: {inventory}")
+    print("Inventory updated. Current stock:", inventory)
     print("Number of entries:", entries)
     print("Number of Failed/Rejected Entries:", rejected_entries)
 
