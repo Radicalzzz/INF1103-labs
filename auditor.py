@@ -6,6 +6,11 @@ while True:
     if user_input.lower() == 'exit':
         break
 
+    # Checks for negative numbers   
+    if user_input.startswith('-') and user_input[1:].replace('.', '', 1).isdigit(): # Checks for int/float negative numbers
+        print("Invalid input. Please enter a non-negative integer number or type 'exit'.")
+        continue
+
     # Checks for handle invalid input (non-integer values)    
     if not user_input.isdigit():
         print("Invalid input. Please enter an integer number or type 'exit'.")
