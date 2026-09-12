@@ -7,7 +7,7 @@ while True:
         break
 
     # Checks for negative numbers   
-    if user_input.startswith('-') and user_input[1:].replace('.', '', 1).isdigit(): # Checks for int/float negative numbers
+    if user_input.startswith('-') and user_input[1:].replace('.', '').isdigit(): # Checks for int/float negative numbers
         print("Invalid input. Please enter a non-negative integer number or type 'exit'.")
         continue
 
